@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Timesheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+   <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css" />-->
+</head>
+<body>
+  <!--jumbotron header-->
+  <div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">All Aboard Train Schedule</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p>Get Where You Need to Be, When You Need to Be</p>
+  </div>
+</div>
+
+
+
+<form>
+  <div class = "container">
+  <div class="form-group">
+    <label for="trainName">Train Name</label>
+    <input type="name" class="form-control" id="inputTrainName" aria-describedby="nameHelp" placeholder="Enter Train name">
+  </div>
+  <div class="form-group">
+      <label for="destination">Destination</label>
+      <input type="destination" class="form-control" id="inputDestination" aria-describedby="destinationHelp" placeholder="Enter Destination">
+  </div>
+  <div class="form-group">
+      <label for="firstTrain">First Train Time</label>
+      <input type="text" class="form-control" id="inputFirstTrain" aria-describedby="firstTrainHelp" placeholder="HH:MM">
+  </div>     
+  <div class="form-group">
+      <label for="frequency">Frequency</label>
+      <input type="frequency" class="form-control" id="inputFrequency" aria-describedby="frequencyHelp" placeholder="Frequency">
+  </div>
+    <button type="button" class="btn btn-primary" style="float:right;" id="submit-button">Submit</button>          
+  </div>
+</form>
+    
+<br>
+<br>
+    <table class="table" id="tableOne">
+        <thead>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">First Train Departure</th>
+            <th scope="col">Frequency of Departure</th>
+            <th scope="col">Time Until Next Train</th>                                              
+          </tr>
+        </thead>
+
+    </body>                    
+<!--JQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--firebase-->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<!--local javascript-->
+<script src="./assets/script.js"></script>
+<!--add moment.js-->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  
+</html>
